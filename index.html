@@ -71,22 +71,24 @@
             }
         }
 
-        /* 🌲 右側の一番上に横いっぱいに表示させる新しいデザイン設定 */
+        /* 🌲 右側の一番上に横いっぱいに表示させる新しいデザイン設定（修正版） */
         .full-width-hero {
             width: 100%;
             overflow: hidden;
-            background-color: #f4f7f4;
+            background-color: #f4f7f4; /* 写真の背景と馴染む優しい薄緑色 */
+            text-align: center;
         }
         .full-width-hero img {
             width: 100%;
             height: auto;
             display: block;
-            object-fit: cover;
-            /* パソコンで見るときに画像が縦に広がりすぎないよう、最大高さを制限（お好みで調整してください） */
-            max-height: 450px; 
+            /* contain にすることで、画像を切り取らず、画質を落とさずに全体を表示します */
+            object-fit: contain; 
+            /* パソコン大画面用に少し高さを広げました */
+            max-height: 600px; 
         }
 
-        /* メニュー内リンクの見た目調整 */
+        /* メナップ内リンクの見た目調整 */
         .sidebar-nav .nav-link, .offcanvas-body .nav-link {
             color: #555555 !important;
             padding: 15px 0 !important;
@@ -170,7 +172,7 @@
                         <div class="col-lg-6 text-start">
                             <span class="badge bg-success mb-3 px-3 py-2 rounded-pill">オンラインヨガ</span>
                             <h1 class="display-4 fw-bold lh-base" style="color: #2c4a3e;"><br>毎日がもっと楽しくなる<br>大人のためのヨガ教室</h1>
-                            <p class="lead mt-3 text-muted">ため息を、ふっと深呼吸に変えて。<br>何歳からでも、気軽に心地よいヨガを始めてみませんか？</p>
+                            <p class="lead mt-3 text-muted">ため息を、ふっと深呼吸に変えて。<br>何歳からでも、気軽に心地よいヨガを始めてみませんか?</p>
                         </div>
                         <div class="col-lg-6 text-center mt-5 mt-lg-0">
                             <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" 
