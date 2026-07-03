@@ -298,8 +298,14 @@
                             </div>
                         </div>
                         <div class="col-md-6 text-start ps-md-5">
-                            <h3 class="h4 fw-bold mb-3" style="color: #2c4a3e; letter-spacing: 0.05em;">赤木 美恵子</h3>
-                            <p class="text-muted mb-4 lh-lg fw-semibold" style="font-size: 0.9rem; letter-spacing: 0.1em;">
+                            <!-- mb-1 から mb-3 に変更して、下の肩書きとの空間を広げました -->
+<div class="d-flex align-items-baseline flex-wrap mb-3">
+    <h3 class="card-title h4 mb-0 fw-bold text-dark me-3">赤木 美恵子</h3>
+    <span class="text-muted" style="font-size: 0.9rem; letter-spacing: 0.1em;">1970年生まれ。岡山県出身。</span>
+</div>
+
+<!-- 肩書き（2行・中太・行間広め） -->
+<p class="text-muted mb-4 lh-lg fw-semibold" style="font-size: 0.9rem; letter-spacing: 0.1em;">
     ヨガインストラクター<br>
     認定ヨーガ療法士
 </p>
@@ -307,7 +313,7 @@
                                 <!-- プロフィール本文（パターン3） -->
                 <div class="card-text text-secondary lh-base" style="font-size: 0.95rem; text-align: justify;">
                     <p class="mb-3">
-                        私がヨガを始めたきっかけは、約10年前から悩まされていた腰痛でした。寝ていても痛みを感じるほど悪化し、「何か運動をしなきゃ……」と焦りながらも、何もできずにいたのです。そんな2020年のコロナ禍に、運命的に出会ったのが「ヨーガセラピー」でした。
+                        私がヨガを始めたきっかけは、約10年前から悩まされていた腰痛でした。寝ていても痛みを感じるほど悪化し、「何か運動をしなきゃ……」と焦りながらも、何もできずにいたのです。そんな2020年のコロナ禍に、運命的に出会ったのが "ヨーガセラピー" でした。
                     </p>
                     <p class="mb-3">
                         驚いたことに、それは私が思っていたヨガとは全く違っていました。激しい動きや難しいポーズは一切ありません。呼吸に合わせてゆっくりと身体を動かし、内側の自律神経やホルモンバランスを優しく整えていくヨガだったのです。
@@ -316,7 +322,7 @@
                         アイソメトリック（無理のない動作）で、お腹や背中、足腰に質の良い小さな筋肉がつくため、気づけば身体がとても軽やかになっていました。
                     </p>
                     <p class="mb-3">
-                        「これなら、母と一緒にできる！」そう確信した私は、本格的にヨガの勉強を始めました。身近な人に教えながら経験を積み、2022年にヨーガ教師、2025年にヨーガ療法士の資格を取得。
+                        「これなら、母と一緒にできる！」そう確信した私は、本格的にヨガの勉強を開始。身近な人に教えながら経験を積み、2022年にヨーガ教師、2025年にヨーガ療法士の資格を取得。
                     </p>
                     <p class="mb-0">
                         かつての私のように不調に悩む方へ、ヨガの心地よさや、瞑想で自分を労わる楽しさをお届けし、一歩ずつ一緒に健康になっていけたら嬉しいです。
@@ -374,6 +380,22 @@
                             <div class="collapse" id="collapseVoice3">
                                 <div class="pt-3 ps-5">
                                     <p class="mb-0 text-muted small lh-lg">「外出しなくても自宅でレッスンを受けられるので、移動の手間もなく、自分のペースで気軽に楽しく続けられています。」（30代女性）</p>
+                                </div>
+                            </div>
+                        </div><!-- 冷え性を追加 -->
+                        <div class="card my-3 p-4 text-start border-0 rounded-4 shadow-sm" style="background-color: #f7f9f6;">
+                            <button class="accordion-trigger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVoice3" aria-expanded="false" aria-controls="collapseVoice3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi bi-person-circle text-success me-3" style="font-size: 2.2rem; line-height: 1; flex-shrink: 0;"></i>
+                                    <div class="w-100">
+                                        <h5 class="fw-bold mb-1" style="color: #2c4a3e;">冷え性だった手足がぽかぽかに！身体の変化を実感</h5>
+                                        <span class="text-success small fw-bold read-more-text"></span>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapse" id="collapseVoice3">
+                                <div class="pt-3 ps-5">
+                                    <p class="mb-0 text-muted small lh-lg">「昔から冷え性で、特に手足の冷えに悩んでいました。でも、ヨガを続けるうちに身体の巡りが良くなったのか、レッスン後は手足がぽかぽか温かくなり、以前ほど冷えを感じにくくなりました。」（70代女性）</p>
                                 </div>
                             </div>
                         </div>
@@ -496,54 +518,106 @@
                                  class="img-fluid rounded-3" 
                                  style="max-width: 500px; width: 100%; height: auto;">
                         </div>
+
+        
+        <!-- 料金プランセクション -->
+<section id="price" class="py-5 bg-light">
+    <div class="container py-4">
+        <!-- セクション見出し -->
+        <div class="text-center mb-5">
+            <h2 class="h2 fw-bold text-dark mb-2">料金プラン</h2>
+            <p class="text-muted" style="font-size: 0.9rem;">ご自身のライフスタイルに合わせてお選びいただけます</p>
+        </div>
+
+        <!-- 3本立て料金カード（ゆったり幅を持たせる調整） -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- 1. グループレッスン -->
+            <div class="col-lg-4 col-md-6" style="max-width: 380px;">
+                <div class="card h-100 border-0 shadow-sm p-4 rounded-4">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h4 fw-bold text-success mb-4 pb-2 border-bottom border-success-subtle">グループレッスン</h3>
                         
-                        <h3 class="h4 fw-bold mb-4 mt-2" style="color: #2c4a3e;">
-                            <i class="bi bi-currency-yen me-1 text-success"></i>料金プラン
-                        </h3>
-                        
-                        <div class="row justify-content-center g-4">
-                            <div class="col-md-6">
-                                <div class="p-4 bg-light-green rounded-4 text-start shadow-sm h-100" style="border: 1px solid #e2e8e2;">
-                                    <h4 class="h5 fw-bold mb-4 text-center" style="color: #2c4a3e; border-bottom: 2px solid #2c4a3e; padding-bottom: 8px;">
-                                        グループレッスン
-                                    </h4>
-                                    <ul class="list-unstyled mb-0 lh-lg" style="font-size: 1.05rem; color: #444;">
-                                        <li class="mb-3 border-bottom pb-2 d-flex justify-content-between align-items-center">
-                                            <span><span class="badge me-2" style="background-color: #d97736; color: white;">おすすめ</span><strong>体験レッスン（1回）</strong></span>
-                                            <span class="text-success fw-bold" style="font-size: 1.2rem;">500円</span>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <span><strong>月4回コース</strong></span>
-                                            <span class="fw-bold" style="font-size: 1.2rem;">3,000円</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <!-- 料金表示エリア -->
+                        <div class="mb-4 py-2 bg-light rounded-3">
+                            <div class="mb-1">
+                                <span class="badge bg-danger text-white px-2 py-1 rounded-pill mb-1" style="font-size: 0.75rem;">初回体験（75分）</span><br>
+                                <span class="h3 fw-bold text-dark">500</span><br>
+                                <span class="text-muted" style="font-size: 0.85rem;">円（税込）</span>
                             </div>
-                            <div class="col-md-6">
-                                <div class="p-4 bg-white rounded-4 text-start shadow-sm h-100" style="border: 1px solid #dee2e6;">
-                                    <h4 class="h5 fw-bold mb-4 text-center" style="color: #444; border-bottom: 2px solid #ced4da; padding-bottom: 8px;">
-                                        個人レッスン
-                                    </h4>
-                                    <ul class="list-unstyled mb-0 lh-lg" style="font-size: 1.05rem; color: #444;">
-                                        <li class="mb-3 border-bottom pb-2 d-flex justify-content-between align-items-center">
-                                            <span><strong>初回体験（60分）</strong></span>
-                                            <span class="text-success fw-bold" style="font-size: 1.2rem;">1000円</span>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <span><strong>通常 1回（75分）</strong></span>
-                                            <span class="fw-bold" style="font-size: 1.2rem;">3,000円〜</span>
-                                        </li>
-                                    </ul>
-                                    <p class="text-muted small mt-3 mb-0 lh-base">
-                                        ※体験レッスンの時間や料金（上記はサンプルです）は実際のプランに合わせて変更してください。<br>
-                                        日時はご都合に合わせて柔軟に調整可能です。じっくり自分のペースで進めたい方におすすめです。
-                                    </p>
-                                </div>
+                            <hr class="mx-4 my-2 opacity-25">
+                            <div>
+                                <span class="fw-bold text-secondary" style="font-size: 0.9rem;">月4回プラン</span><br>
+                                <span class="h2 fw-bold text-dark">3,000</span>
+                                <span class="text-muted" style="font-size: 0.85rem;">円 / 月</span>
                             </div>
                         </div>
+
+                        <!-- 説明文 -->
+                        <p class="card-text text-secondary text-start lh-base mb-0" style="font-size: 0.9rem;">
+                            皆さまと一緒に心地よい空間を共有しながら、楽しくヨーガセラピーを行います。継続して心身を整えたい方にぴったりのプランです。
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <!-- 2. 個人レッスン -->
+            <div class="col-lg-4 col-md-6" style="max-width: 380px;">
+                <div class="card h-100 border-0 shadow-sm p-4 rounded-4">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h4 fw-bold text-success mb-4 pb-2 border-bottom border-success-subtle">個人レッスン</h3>
+                        
+                        <!-- 料金表示エリア -->
+                        <div class="mb-4 py-2 bg-light rounded-3">
+                            <div class="mb-1">
+                                <span class="badge bg-danger text-white px-2 py-1 rounded-pill mb-1" style="font-size: 0.75rem;">初回体験（75分）</span><br>
+                                <span class="h3 fw-bold text-dark">1,000</span><br>
+                                <span class="text-muted" style="font-size: 0.85rem;">円（税込）</span>
+                            </div>
+                            <hr class="mx-4 my-2 opacity-25">
+                            <div>
+                                <span class="fw-bold text-secondary" style="font-size: 0.9rem;">通常1回（75分）</span><br>
+                                <span class="h2 fw-bold text-dark">3,000</span>
+                                <span class="text-muted" style="font-size: 0.85rem;">円 / 回</span>
+                            </div>
+                        </div>
+
+                        <!-- 説明文 -->
+                        <p class="card-text text-secondary text-start lh-base mb-0" style="font-size: 0.9rem;">
+                            じっくり自分のペースで進めたい方、オーダーメイドでメニューを組んでほしい方におすすめです。<br>
+                            <span class="text-muted d-block mt-2" style="font-size: 0.85rem;">※日時はご都合に合わせて柔軟に調整可能です。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. 動画配信 -->
+            <div class="col-lg-4 col-md-6" style="max-width: 380px;">
+                <div class="card h-100 border-0 shadow-sm p-4 rounded-4 border-top border-success border-4">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h4 fw-bold text-success mb-4 pb-2 border-bottom border-success-subtle">動画配信</h3>
+                        
+                        <!-- 料金表示エリア -->
+                        <div class="mb-4 py-4 bg-light rounded-3 d-flex flex-column justify-content-center" style="min-height: 146px;">
+                            <div>
+                                <span class="fw-bold text-secondary" style="font-size: 0.9rem;">月3本プラン</span><br>
+                                <span class="h2 fw-bold text-dark">3,000</span>
+                                <span class="text-muted" style="font-size: 0.85rem;">円 / 月</span>
+                            </div>
+                        </div>
+
+                        <!-- 説明文 -->
+                        <p class="card-text text-secondary text-start lh-base mb-0" style="font-size: 0.9rem;">
+                            グループレッスンの動画を配信します。日中お忙しい方や、自由な時間にやりたい方におすすめです。<br>
+                            <span class="text-muted d-block mt-2" style="font-size: 0.85rem;">※視聴期限は1週間程度となります。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
             <section id="contact" class="text-center bg-light-green">
                 <div class="container py-4">
