@@ -172,13 +172,18 @@
         .accordion-trigger-btn:focus {
             box-shadow: none;
         }
-        /* 開閉時に「▼ 続きを読む」の矢印や文字を切り替える設定 */
-        .read-more-text::before {
-            content: "▼  全文を表示";
-        }
-        .accordion-trigger-btn[aria-expanded="true"] .read-more-text::before {
-            content: "▲  閉じる";
-        }
+        /* 👑 1. 初期状態（閉じているとき）の文字設定 */
+/* ボタンに .collapsed がついている、または aria-expanded="false" のときは「全文を表示」 */
+.accordion-trigger-btn.collapsed .read-more-text::before,
+.accordion-trigger-btn[aria-expanded="false"] .read-more-text::before {
+    content: "▼   全文を表示" !important;
+}
+
+/* 👑 2. クリックして開いたとき（展開時）の文字設定 */
+/* ボタンから .collapsed が消えたとき、または aria-expanded="true" のときは「閉じる」 */
+.accordion-trigger-btn:not(.collapsed)[aria-expanded="true"] .read-more-text::before {
+    content: "▲   閉じる" !important;
+}
     </style>
 </head>
 <body>
